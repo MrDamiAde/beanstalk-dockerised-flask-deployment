@@ -47,17 +47,13 @@ Here is the screenshot of the dockerised app being launched on localhost:
 I used AWS Elastic Beanstalk to deploy the Docker container and secured it using SSL via ACM.
 
 ### Steps:
-1. Configured an Elastic Beanstalk environment with Docker.
-```
-eb create flask-todo-app-env
-```
-3. Used `eb init` and `eb create` to deploy the app.
-4. Configured the subdomain `app.damiadeprojects.uk` to point to the URL provided by Elastic Beanstalk
-5. Requested and attached an SSL certificate from ACM.
+1. Used `eb init` and `eb create` to deploy the app.
+2. Configured the subdomain `app.damiadeprojects.uk` to point to the URL provided by Elastic Beanstalk
+3. Requested and attached an SSL certificate from ACM.
 
 ![App Screenshot](screenshots/Screenshot%202025-03-21%20090345.png)<br>
 
-6. Updated the load balancer settings to enforce HTTPS.
+4. Updated the load balancer settings to enforce HTTPS.
 
 ![App Screenshot](screenshots/Screenshot%202025-03-21%20092724.png)
 
