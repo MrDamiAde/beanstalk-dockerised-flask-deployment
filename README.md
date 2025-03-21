@@ -17,6 +17,10 @@ This project demonstrates my ability to deploy a Flask application on AWS Elasti
 
 I built a simple Flask application with a single route to demonstrate deployment on AWS. The app serves basic HTTP responses and includes a `requirements.txt` file for dependency management.
 
+Here is the screenshot of the app deployed:
+
+![App Screenshot](screenshots/Screenshot%202025-03-19%20121113.png)
+
 
 ### Files:
 - `app.py` – Main Flask application
@@ -30,9 +34,10 @@ I containerised the application using Docker to ensure portability and consisten
 2. Installed dependencies and copied the Flask app into the container.
 3. Exposed the necessary port (`5000`) and defined the startup command.
 
-Here is the screenshot of the app deployed:
+Here is the screenshot of the dockerised app being launched on localhost:
 
-![App Screenshot](screenshots/Screenshot%202025-03-19%20121113.png)
+![App Screenshot2](screenshots/Screenshot%202025-03-19%20124048.png)
+=
 
 ### Key Files:
 - `Dockerfile`
@@ -44,8 +49,19 @@ I used AWS Elastic Beanstalk to deploy the Docker container and secured it using
 ### Steps:
 1. Configured an Elastic Beanstalk environment with Docker.
 2. Used `eb init` and `eb create` to deploy the app.
-3. Requested and attached an SSL certificate from ACM.
-4. Updated the load balancer settings to enforce HTTPS.
+3. Bought a domain and configured the dubdomain app.damiadeprojects.uk
+4. Requested and attached an SSL certificate from ACM.
+
+![App Screenshot](screenshots/Screenshot%202025-03-21%20090345.png)<br>
+
+6. Updated the load balancer settings to enforce HTTPS.
+
+![App Screenshot](screenshots/Screenshot%202025-03-21%20092724.png)
+
+Here is screenshot of the my secured web app:
+
+![App Screenshot](screenshots/Screenshot%202025-03-21%20092501.png)
+
 
 ### Key Commands:
 - `eb init` – Initialise the Elastic Beanstalk project.
