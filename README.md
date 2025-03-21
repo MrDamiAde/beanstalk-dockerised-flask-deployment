@@ -1,6 +1,6 @@
 # Beanstalk Dockerised Flask Deployment
 
-This project demonstrates my ability to deploy a Flask application on AWS Elastic Beanstalk using Docker and set up SSL to secure the web app with AWS Certificate Manager.
+This project demonstrates my ability to deploy a Flask application on AWS Elastic Beanstalk using Docker and set up SSL to secure the web app with ACM.
 
 ## Key Technologies Used
 
