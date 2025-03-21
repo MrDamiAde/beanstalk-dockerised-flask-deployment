@@ -16,7 +16,7 @@ This project demonstrates my ability to deploy a Flask application on AWS Elasti
 
 ## 1. Creating the Flask App
 
-I built a simple Flask application with a single route to demonstrate deployment on AWS. The app serves basic HTTP responses and includes a `requirements.txt` file for dependency management.
+Using Venv, I built a simple Flask application with a single route to demonstrate deployment on AWS. The app serves basic HTTP responses and includes a `requirements.txt` file for dependency management.
 
 Here is the screenshot of the app locally:
 
