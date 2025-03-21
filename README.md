@@ -17,10 +17,6 @@ This project demonstrates my ability to deploy a Flask application on AWS Elasti
 
 I built a simple Flask application with a single route to demonstrate deployment on AWS. The app serves basic HTTP responses and includes a `requirements.txt` file for dependency management.
 
-Here is the screenshot of the app deployed:
-
-![App Screenshot](screenshots/Screenshot%202025-03-19%20121113.png)
-
 
 ### Files:
 - `app.py` – Main Flask application
@@ -33,6 +29,10 @@ I containerised the application using Docker to ensure portability and consisten
 1. Created a `Dockerfile` with a lightweight `python:3.x` base image.
 2. Installed dependencies and copied the Flask app into the container.
 3. Exposed the necessary port (`5000`) and defined the startup command.
+
+Here is the screenshot of the app deployed:
+
+![App Screenshot](screenshots/Screenshot%202025-03-19%20121113.png)
 
 ### Key Files:
 - `Dockerfile`
