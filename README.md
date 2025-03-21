@@ -12,6 +12,7 @@ This project demonstrates my ability to deploy a Flask application on AWS Elasti
 - **GitHub**
 - **Python (Flask)**
 - **Bash**
+- **Cloudflare**
 
 ## 1. Creating the Flask App
 
@@ -48,7 +49,7 @@ I used AWS Elastic Beanstalk to deploy the Docker container and secured it using
 
 ### Steps:
 1. Used `eb init` and `eb create` to deploy the app.
-2. Configured the subdomain `app.damiadeprojects.uk` to point to the URL provided by Elastic Beanstalk
+2. Configured the subdomain `app.damiadeprojects.uk` ON Cloudflare to point to the EB URL
 3. Requested and attached an SSL certificate from ACM.
 
 ![App Screenshot](screenshots/Screenshot%202025-03-21%20090345.png)<br>
