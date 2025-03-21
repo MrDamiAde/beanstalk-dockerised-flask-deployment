@@ -44,12 +44,12 @@ Here is the screenshot of the dockerised app being launched on localhost:
 - `.dockerignore`
 
 ## 3. Deploying to AWS Elastic Beanstalk with SSL
-I used AWS Elastic Beanstalk to deploy the Docker container and secured it using SSL via AWS Certificate Manager (ACM).
+I used AWS Elastic Beanstalk to deploy the Docker container and secured it using SSL via ACM.
 
 ### Steps:
 1. Configured an Elastic Beanstalk environment with Docker.
 2. Used `eb init` and `eb create` to deploy the app.
-3. Bought a domain and configured the dubdomain app.damiadeprojects.uk
+3. Bought a domain and configured the subdomain 'app.damiadeprojects.uk'
 4. Requested and attached an SSL certificate from ACM.
 
 ![App Screenshot](screenshots/Screenshot%202025-03-21%20090345.png)<br>
