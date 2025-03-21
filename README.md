@@ -49,7 +49,7 @@ I used AWS Elastic Beanstalk to deploy the Docker container and secured it using
 ### Steps:
 1. Configured an Elastic Beanstalk environment with Docker.
 2. Used `eb init` and `eb create` to deploy the app.
-3. Bought a domain and configured the subdomain 'app.damiadeprojects.uk'
+3. Configured the subdomain `app.damiadeprojects.uk` to point to the URL provided by Elastic Beanstalk
 4. Requested and attached an SSL certificate from ACM.
 
 ![App Screenshot](screenshots/Screenshot%202025-03-21%20090345.png)<br>
